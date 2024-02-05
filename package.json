@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "tsnd --respawn --clear src/app.ts",
     "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node dist/app.js"
-
+    "start": "npm run build && node dist/app.js",
+    "netlify:dev": "netlify dev"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,8 @@
     "rimraf": "^5.0.5",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@netlify/functions": "^2.5.1"
   }
 }
